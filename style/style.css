@@ -276,71 +276,240 @@ section {
 }
 
 /* === CONTACT SECTION === */
-#contact {
-    background-image: url(../image/contactUs.jpg);
-    background-size: cover;
-    padding: 80px 0;
+:root {
+    --dark-blue: #0b1c43;
+    /* Main background color */
+    --input-bg: #1c325c;
+    /* Slightly lighter blue for input fields */
+    --light-green: #a7d03a;
+    /* Light part of the gradient */
+    --dark-green: #689c1b;
+    /* Dark part of the gradient */
+    --text-color: #ffffff;
+    /* White text */
 }
 
-.contact-grid {
+/* --- Section Layout and Background --- */
+.contact-section {
+    padding: 0;
+    /* Remove padding to allow background to fill */
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    /* Mimic the overall rounded container shape from the image */
+    border-radius: 20px;
+    overflow: hidden;
+    /* Important for the rounded corners */
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.contact-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    /* Allows columns to stack on mobile */
+    padding: 60px;
+    /* Internal padding for the content */
 }
 
-.contact-info {
+/* --- Left Column: Text Area Styling --- */
+.contact-text-area {
     flex: 1;
-    min-width: 280px;
+    /* Take up space */
+    padding-right: 40px;
+    max-width: 45%;
+    /* Control width on large screens */
 }
 
-.contact-details {
-    color: #e2e8f0;
-    margin-bottom: 16px;
-    line-height: 1.7;
+.contact-text-area h1 {
+    font-size: 3em;
+    /* Large, bold title */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.contact-details a {
-    color: #fff;
+/* Style for bolding 'energy needs' */
+.contact-text-area h1 strong {
+    font-weight: 900;
+}
+
+.contact-text-area p {
+    font-size: 1.1em;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-email svg {
+    margin-right: 10px;
+    color: var(--light-green);
+    /* Icon color */
+}
+
+.contact-email a {
+    color: var(--text-color);
     text-decoration: none;
+    font-size: 1.1em;
 }
 
+.social-icon svg {
+    /* Style for the 'in' (LinkedIn) icon */
+    background-color: var(--text-color);
+    color: var(--dark-blue);
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* Adjust size to match the image */
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* --- Right Column: Form Styling --- */
 .contact-form {
+    flex: 1;
+    /* Take up the remaining space */
+    max-width: 55%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 50%;
+    margin-bottom: 0;
 }
 
-.contact-form input,
+.form-group.half {
+    flex: 1;
+    /* Make both groups take equal space in the row */
+}
+
+.form-group.full {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+/* --- Input Field Styling --- */
+.input-icon-group {
+    position: relative;
+}
+
+.input-icon-group svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    /* Icon color */
+    opacity: 0.6;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
 .contact-form textarea {
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-bg);
+    color: var(--text-color);
+    padding: 15px 15px 15px 50px;
+    /* Increase left padding for the icon */
+    border-radius: 5px;
+    font-size: 1em;
     width: 100%;
-    padding: 12px;
-    border: 1px solid #d3d3d3;
-    border-radius: 6px;
-    font-size: 15px;
-    font-family: inherit;
-    outline: none;
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+    transition: border-color 0.3s;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    padding-left: 15px;
+    /* No icon for textarea */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #00bcd4;
-    box-shadow: 0 0 4px rgba(0, 188, 212, 0.4);
+    border-color: var(--light-green);
+    /* Highlight on focus */
+    outline: none;
 }
 
-.btn.primary {
-    background: var(--indigo);
-    color: #fff;
-    padding: 12px;
+/* --- Submit Button Styling --- */
+.submit-btn {
+    width: 100%;
+    padding: 15px 30px;
     border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--dark-blue);
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 6px;
-    transition: 0.2s;
+    /* Apply the gradient background from the image */
+    background: linear-gradient(90deg, var(--light-green) 0%, var(--dark-green) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
 }
 
-.btn.primary:hover {
-    background: #0099b3;
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn svg {
+    margin-left: 10px;
+    color: var(--dark-blue);
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
+    .contact-text-area,
+    .contact-form {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-text-area h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-text-area {
+        margin-bottom: 40px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group.half {
+        margin-bottom: 20px;
+    }
 }
 
 /* === FOOTER === */
