@@ -290,17 +290,23 @@ section {
 }
 
 /* --- Section Layout and Background --- */
+.contact-body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+
 .contact-section {
     padding: 0;
     /* Remove padding to allow background to fill */
     background-color: var(--dark-blue);
     color: var(--text-color);
     /* Mimic the overall rounded container shape from the image */
-    border-radius: 20px;
-    overflow: hidden;
+    /* border-radius: 20px; */
+    /* overflow: hidden; */
     /* Important for the rounded corners */
     max-width: 1200px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
 }
 
 .contact-container {
@@ -512,8 +518,255 @@ section {
     }
 }
 
+/* --- Global Footer Styles --- */
+.wroffy-footer {
+    background-color: #1a4f8a;
+    /* Dark Blue from the image */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    /* max-width: 1200px; */
+    /* Adjust based on your site's width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Top Section (Products/Services) Styling --- */
+.footer-top-section {
+    padding: 40px 0;
+}
+
+.footer-logos {
+    height: 21px;
+    margin-right: 4px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    /* Creates 7 equal columns */
+    gap: 40px;
+    line-height: normal;
+}
+
+
+.product-column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.product-column li {
+    font-size: 0.95em;
+    /* Smaller font size for product listings */
+    line-height: 1.8;
+}
+
+.product-column a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*  */
+/*  */
+/*  */
+/* --- Top Section Container Styles --- */
+.footer-top-section {
+    background-color: #1a4f8a;
+    /* Dark Blue from the image */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+.products-container {
+    /* max-width: 1200px; */
+    /* Aligns with common desktop width */
+    margin: 0 20px;
+    padding: 0 20px;
+
+    /* --- Key Flexbox Properties --- */
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensures all columns stay on one line */
+    justify-content: space-between;
+    /* Spreads columns across the container */
+    gap: 15px;
+    /* Spacing between the columns */
+}
+
+/* --- Column Sizing (Flexbox) --- */
+.product-column {
+    /* Sets the basis and allows all columns to grow/shrink equally */
+    flex: 1 1 160px;
+    /* Grow: 1, Shrink: 1, Basis: 160px (ensures minimum width) */
+    min-width: 150px;
+}
+
+/* Note: You might adjust the flex-basis value (160px) if you need perfect visual alignment, 
+   but 'flex: 1' usually works well for equal distribution across 6 items. */
+
+/* --- Column Header (H3) Styling --- */
+.product-column h3 {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+    display: flex;
+    /* Used to align the icon and text */
+    align-items: center;
+}
+
+/* Icon Placeholder Styling (You would integrate actual icons here) */
+.product-column h3 span {
+    margin-right: 5px;
+    display: inline-block;
+    /* Placeholder styles for where the logo/icon would sit */
+}
+
+/* --- List Item Styling --- */
+.product-column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.product-column li {
+    font-size: 0.95em;
+    /* Small, legible font for the dense list */
+    line-height: 1.8;
+}
+
+.product-column a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.product-column a:hover {
+    text-decoration: underline;
+}
+
+/*  */
+/*  */
+
+/* --- Bottom Section (Info/Contact) Styling --- */
+.footer-bottom-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1e6bc3;
+    padding: 40px 0;
+}
+
+.info-container {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-section {
+    padding-right: 20px;
+}
+
+/* --- Bottom Section Column Widths --- */
+.about-wroffy {
+    flex: 2.5;
+}
+
+.company-links {
+    flex: 1;
+}
+
+.support-contact {
+    flex: 1.5;
+}
+
+.contact-info {
+    flex: 1.5;
+}
+
+/* --- Text and Link Styling (Bottom) --- */
+.footer-bottom-section h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-bottom-section h4 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-section p,
+.footer-bottom-section li {
+    font-size: 0.85em;
+    line-height: 1.6;
+}
+
+.company-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company-links li {
+    margin-bottom: 8px;
+}
+
+.company-links a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* --- Contact and Helpline Styling --- */
+.phone-number a {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #f7e07a;
+    /* Accent color for the phone number */
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contact-item .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #f7e07a;
+    /* Example of accent color for icons */
+}
+
+/* --- Social Icons (Placeholder Styling) --- */
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.badge-text {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 5px 8px;
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
 /* === FOOTER === */
-footer {
+/* footer {
+    height: 85vh;
     background: linear-gradient(180deg, #0b1220 0%, #1e293b 100%);
     color: #c7d2fe;
     padding: 60px 0 20px;
@@ -543,7 +796,7 @@ footer {
     padding-top: 30px;
     font-size: 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+} */
 
 @keyframes fadeIn {
     from {
@@ -579,5 +832,31 @@ footer {
 
     .contact-form button {
         width: 100%;
+    }
+}
+
+/* --- Responsiveness: Mobile Layout (Up to 767px) --- */
+/* For smaller screens, we switch to a 2-column layout. */
+@media (max-width: 767px) {
+    .products-container {
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .product-column {
+        /* Set basis for 2 columns per row (approx 50% of the width) */
+        flex: 1 1 calc(50% - 10px);
+        min-width: 150px;
+    }
+
+    .product-column h3 {
+        font-size: 0.9em;
+        /* Scale headers back slightly on small screens */
+    }
+
+    .product-column li {
+        font-size: 0.8em;
+        /* Scale list items back slightly on small screens */
+        line-height: 1.6;
     }
 }
