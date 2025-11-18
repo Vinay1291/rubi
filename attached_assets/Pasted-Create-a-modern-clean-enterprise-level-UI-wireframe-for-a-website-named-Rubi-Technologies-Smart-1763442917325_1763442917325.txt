@@ -1,0 +1,149 @@
+Create a modern, clean, enterprise-level UI wireframe for a website named “Rubi Technologies – Smart IT Solutions for Modern Business”. The design style should match the professionalism of nipun-it.com with a futuristic, corporate, and minimalistic layout.
+
+Sections to include (in order):
+
+1. Navigation Bar (Sticky / Transparent to Solid on Scroll)
+
+Logo on left (Rubi Technologies®)
+
+Menu: Home, Products, Services, Industries, About Us, Clients, Contact
+
+CTA button: “Get in Touch”
+
+2. Hero Section (Right-to-Left Sliding Banner)
+
+Full-width hero with 3 slides
+
+Each slide includes:
+
+A bold headline about smart IT solutions, cloud transformation, product engineering
+
+Subheading tagline
+
+CTA buttons: “Explore Services” and “Talk to Expert”
+
+Clean illustration / IT business graphics
+
+3. Our Products (Horizontal Auto-Scroll Slider)
+
+Display project thumbnails in a horizontal scrolling carousel
+
+Each card shows:
+
+Project image
+
+Project name
+
+Short description
+
+Keep layout similar to nipun-it.com’s product slider
+
+4. Explore Our Services (Grid with Individual Pages)
+
+6 main service cards:
+
+Product Development
+
+Web Development
+
+App Development
+
+Cloud Services
+
+Infrastructure Services
+
+IT Security & Managed Services
+
+Each should look clickable and lead to its dedicated service detail page.
+
+5. Industries Section
+
+Show industries Rubi Technologies serves:
+
+Healthcare
+
+Finance
+
+Retail
+
+Manufacturing
+
+Education
+
+Government
+
+Use icons or minimal illustrations for each industry.
+
+6. About Rubi Technologies Section
+
+Two-column layout:
+
+Left: Image or illustration
+
+Right: “About Us” title, company mission, vision, digital transformation message
+
+Similar to nipun-it’s layout but more modern and sleek.
+
+7. Our Clients Section
+
+Grid layout of client brand logos
+
+Use clean spacing, monochrome logos
+
+8. Footer (Exactly like the structure provided by the user)
+
+Multi-column mega-footer with product categories:
+
+Microsoft
+
+Adobe
+
+Autodesk
+
+Services
+
+Security Solutions
+
+Software Licensing
+
+Business Hardware
+
+Digital & Web
+
+Cloud Computing
+
+Endpoint Antivirus
+
+Corel
+
+Include:
+
+About Rubi Technologies
+
+Company Links
+
+Contact Information
+
+Phone numbers
+
+Email
+
+Address
+
+Bottom line: “© 2025 Rubi Technologies – All rights reserved.”
+
+Overall Design Style:
+
+Modern IT-company look
+
+Strong blue, white, and dark themes
+
+Smooth rounded cards
+
+Subtle shadows
+
+Premium typography
+
+Responsive desktop-first layout
+
+Goal: Produce a corporate, trustworthy, futuristic UI wireframe layout suitable for an enterprise IT company website similar to nipun-it.com but more modern and refined.
