@@ -4,315 +4,370 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rubi Technologies — Smart IT & Cloud Services</title>
-    <meta property="og:title" content="Rubi Technologies — Smart IT & Cloud Services">
-    <meta property="og:description" content="Cloud, cybersecurity and IT managed services for modern businesses.">
+    <title>Rubi Technologies — Smart IT Solutions for Modern Business</title>
+    <meta property="og:title" content="Rubi Technologies — Smart IT Solutions for Modern Business">
+    <meta property="og:description"
+        content="Enterprise IT solutions, cloud transformation, and digital innovation for modern businesses.">
     <meta property="og:image" content="image/og-preview.jpg">
     <meta name="description"
-        content="Rubi Technologies — Managed IT services, Cloud migration, Cybersecurity, Backup & DR. Trusted partners for modern businesses." />
-    <!-- <link rel="icon" type="image/png" href="image/favicon.png"> -->
+        content="Rubi Technologies — Product Development, Cloud Services, IT Security, and Managed Services for modern enterprises." />
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
     <link rel="manifest" href="image/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/carousel.css">
 </head>
 
 <body>
-    <!-- 
-    <div class="topbar">
-        <div class="container row">
-            <div><img style="height: 13px;" src="image/phone-icon.svg" alt="phone"> +91 91X-XXXXXXX &nbsp; &nbsp; <img
-                    style="height: 13px;" src="image/mail-svgrepo-com.svg" alt="mail">
-                contact@rubi-tech.com</div>
-        </div>
-    </div> -->
-
-    <header style="padding: 0 8px;">
-        <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:18px 0">
+    <!-- Navigation Bar (Sticky) -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
             <div class="brand">
                 <div class="logo">RT</div>
-                <div>
-                    <div style="font-weight:700;font-size:16px;color:#0f172a">Rubi Technologies</div>
-                    <div style="font-size:13px;color:var(--muted)">Smart IT solutions for modern business</div>
+                <div class="brand-text">
+                    <div class="brand-name">Rubi Technologies<sup>®</sup></div>
+                    <div class="brand-tagline">Smart IT Solutions</div>
                 </div>
             </div>
 
-            <nav class="desktop">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
                 <a href="#products">Products</a>
-                <a class="btn cta" href="#contact">Get in touch</a>
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#about">About Us</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="cta-btn">Get in Touch</a>
             </nav>
 
-            <div class="hamburger">
-                <button aria-label="open menu"
-                    style="padding:8px 12px;border-radius:8px;border:1px solid #e6edf3;background:#fff">Menu</button>
-                <script>
-                    const btn = document.querySelector('.hamburger button');
-                    const nav = document.querySelector('nav.desktop');
-                    btn.addEventListener('click', () => nav.classList.toggle('show'));
-                </script>
-            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <main>
-
-
-        <!-- Carousel  -->
-
-        <div class="carousel">
-            <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" onclick="setInt();" checked />
-            <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
-            <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
-            <input type="radio" name="carousel" id="slide-btn-4" class="slide-btn" onclick="setInt();" />
-            <input type="radio" name="carousel" id="slide-btn-5" class="slide-btn" onclick="setInt();" />
-            <input type="radio" name="carousel" id="slide-btn-6" class="slide-btn" onclick="setInt();" />
-            <!-- <input type="radio" name="carousel" id="slide-btn-7" class="slide-btn" onclick="setInt();" />
-            <input type="radio" name="carousel" id="slide-btn-8" class="slide-btn" onclick="setInt();" /> -->
-
-            <div class="slide one">
-                <div class="slide-content">
-                    <h1>Trusted IT & Cloud Partner</h1>
-                    <p>Empowering businesses with secure, scalable, and smart IT solutions.</p>
+    <!-- Hero Section (Right-to-Left Sliding Banner) -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transform Your Business with Smart IT Solutions</h1>
+                    <p class="hero-subtitle">Empowering enterprises with cutting-edge technology and cloud
+                        transformation</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn-primary">Explore Services</a>
+                        <a href="#contact" class="btn-secondary">Talk to Expert</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-graphic"></div>
                 </div>
             </div>
 
-            <div class="slide two">
-                <div class="slide-content">
-                    <h1>Backup & Disaster Recovery</h1>
-                    <p>Reliable backup systems that protect your business data 24/7.</p>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 class="hero-title">Cloud Migration & Infrastructure Excellence</h1>
+                    <p class="hero-subtitle">Seamless cloud adoption with Azure, AWS, and hybrid solutions</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn-primary">Explore Services</a>
+                        <a href="#contact" class="btn-secondary">Talk to Expert</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-graphic cloud"></div>
                 </div>
             </div>
 
-            <div class="slide three">
-                <div class="slide-content">
-                    <h1>Cloud Infrastructure</h1>
-                    <p>Seamless cloud migration with performance optimization.</p>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 class="hero-title">Enterprise Product Engineering & Innovation</h1>
+                    <p class="hero-subtitle">Custom software development tailored to your business needs</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn-primary">Explore Services</a>
+                        <a href="#contact" class="btn-secondary">Talk to Expert</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="slide four">
-                <div class="slide-content">
-                    <h1></h1>
-                    <p></p>
+                <div class="hero-image">
+                    <div class="hero-graphic engineering"></div>
                 </div>
-            </div>
-
-            <div class="slide five">
-                <div class="slide-content">
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="slide six">
-                <div class="slide-content">
-                    <h1> </h1>
-                    <p></p>
-                </div>
-            </div>
-            <!-- 
-            <div class="slide seven">
-                <div class="slide-content">
-
-                </div>
-            </div>
-
-            <div class="slide eight">
-                <div class="slide-content">
-
-                </div>
-            </div> -->
-
-            <div class="labels">
-                <label for="slide-btn-1"></label>
-                <label for="slide-btn-2"></label>
-                <label for="slide-btn-3"></label>
-                <label for="slide-btn-4"></label>
-                <label for="slide-btn-5"></label>
-                <label for="slide-btn-6"></label>
             </div>
         </div>
 
-        <!-- end c -->
-
+        <div class="hero-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
         </div>
-        </section>
 
-        <section id="about"
-            style="background-image: url(image/show-main.jpg); background-repeat: no-repeat; background-size: cover; height: 90vh;">
-            <div class="container">
-                <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
-                    <div style="flex:1;min-width:280px">
-                        <span class="eyebrow" style="font-size: 20px; margin-bottom: 20px;">Our Core Services</span><br>
-                        <h2 class="section-title">Smart and effective business solutions</h2>
-                        <p class="section-sub" style="max-width: 620px;">Our mission is to provide best in class,
-                            creative, unique Software Solutions that can solve all our client’s business problems that
-                            they face on day to day bases. We provide software & solutions for companies of all sizes
-                            and all industry sectors.
-                        </p>
+        <button class="hero-nav prev" aria-label="Previous slide">‹</button>
+        <button class="hero-nav next" aria-label="Next slide">›</button>
+    </section>
 
-                        <ul style="color:#111827;line-height:1.9">
-                            <li>All in One PC's Solution</li>
-                            <li>Managed IT Services & Support</li>
-                            <li>Cloud Advisory, Migration & Managed Services</li>
-                            <li>Cybersecurity, VAPT & IT Audits</li>
-                            <li>Backup, DR & Business Continuity</li>
-                        </ul>
-                        <!-- 
-                        <div style="margin-top:14px"><a class="btn primary" href="#services">Explore services</a></div> -->
+    <!-- Our Products (Horizontal Auto-Scroll Slider) -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Innovative solutions powering modern businesses</p>
+            </div>
+
+            <div class="products-slider-wrapper">
+                <button class="slider-nav prev-product" aria-label="Previous">‹</button>
+                <div class="products-slider">
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="product-icon">🖥️</div>
+                        </div>
+                        <h3 class="product-name">All-in-One PC Solutions</h3>
+                        <p class="product-desc">Custom-built desktops and gaming PCs with premium components</p>
                     </div>
 
-                    <!-- <div style="width:360px;min-width:240px">
-                        <img alt="office" src="./image/smart.jpeg"
-                            style="width:100%;border-radius:10px;display:block" />
-                    </div> -->
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="product-icon">☁️</div>
+                        </div>
+                        <h3 class="product-name">Cloud Infrastructure</h3>
+                        <p class="product-desc">Enterprise-grade cloud solutions for scalable growth</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="product-icon">🔐</div>
+                        </div>
+                        <h3 class="product-name">Security Solutions</h3>
+                        <p class="product-desc">Advanced cybersecurity and endpoint protection</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="product-icon">💼</div>
+                        </div>
+                        <h3 class="product-name">Enterprise Software</h3>
+                        <p class="product-desc">Microsoft, Adobe, and Autodesk licensed solutions</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="product-icon">🔄</div>
+                        </div>
+                        <h3 class="product-name">Backup & DR</h3>
+                        <p class="product-desc">Reliable backup and disaster recovery systems</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image"
+                            style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <div class="product-icon">📊</div>
+                        </div>
+                        <h3 class="product-name">ERP Solutions</h3>
+                        <p class="product-desc">Enterprise Resource Planning for business automation</p>
+                    </div>
+                </div>
+                <button class="slider-nav next-product" aria-label="Next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Our Services (Grid) -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Our Services</h2>
+                <p class="section-subtitle">Comprehensive IT solutions tailored to your business needs</p>
+            </div>
+
+            <div class="services-grid">
+                <a href="#service-product-dev" class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title">Product Development</h3>
+                    <p class="service-desc">End-to-end product engineering and custom software development</p>
+                    <span class="service-arrow">→</span>
+                </a>
+
+                <a href="#service-web-dev" class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-desc">Modern, responsive websites and web applications</p>
+                    <span class="service-arrow">→</span>
+                </a>
+
+                <a href="#service-app-dev" class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">App Development</h3>
+                    <p class="service-desc">Native and cross-platform mobile applications</p>
+                    <span class="service-arrow">→</span>
+                </a>
+
+                <a href="#service-cloud" class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3 class="service-title">Cloud Services</h3>
+                    <p class="service-desc">Cloud migration, optimization, and managed services</p>
+                    <span class="service-arrow">→</span>
+                </a>
+
+                <a href="#service-infrastructure" class="service-card">
+                    <div class="service-icon">🖧</div>
+                    <h3 class="service-title">Infrastructure Services</h3>
+                    <p class="service-desc">Network design, deployment, and maintenance</p>
+                    <span class="service-arrow">→</span>
+                </a>
+
+                <a href="#service-security" class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-title">IT Security & Managed Services</h3>
+                    <p class="service-desc">24/7 monitoring, VAPT, and comprehensive IT support</p>
+                    <span class="service-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Industries We Serve</h2>
+                <p class="section-subtitle">Trusted by leading organizations across multiple sectors</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <h3 class="industry-name">Healthcare</h3>
+                    <p class="industry-desc">HIPAA-compliant solutions for medical facilities</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">💰</div>
+                    <h3 class="industry-name">Finance</h3>
+                    <p class="industry-desc">Secure banking and financial services technology</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🛒</div>
+                    <h3 class="industry-name">Retail</h3>
+                    <p class="industry-desc">E-commerce and retail management solutions</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🏭</div>
+                    <h3 class="industry-name">Manufacturing</h3>
+                    <p class="industry-desc">Industrial automation and IoT integration</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🎓</div>
+                    <h3 class="industry-name">Education</h3>
+                    <p class="industry-desc">Learning management and campus solutions</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🏛️</div>
+                    <h3 class="industry-name">Government</h3>
+                    <p class="industry-desc">Public sector digital transformation services</p>
                 </div>
             </div>
-        </section>
-        <section id="services" style="background-color: #dbdbdb;">
-            <div class="container">
-                <h2 class="section-title" style="text-align: center; font-size: 30px; padding-bottom: 20px;">
-                    Professional and highly dedicated
-                    <br> business services
-                </h2>
+        </div>
+    </section>
 
-                <div class="grid-4" id="serviceGrid" style="margin-top:10px">
-                    <div class="card" style="background-image: url(./image/pc-repare.jpg);">
-                        <h4>All In One PC Solution's</h4>
-                        <p style="margin-top:8px">Gaming PC Build, Desktop & Laptop Repare.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/It.webp);">
-                        <h4>Managed IT Services</h4>
-                        <p style="margin-top:8px">24x7 monitoring, support and IT helpdesk.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/cloude.webp);">
-                        <h4>Cloud Migration</h4>
-                        <p style="margin-top:8px">Azure & AWS migration, cost optimization.</p>
-                    </div>
-                    <div class="card " style="background-image: url(./image/pc-part.jpg);">
-                        <h4>Cybersecurity</h4>
-                        <p style="margin-top:8px">VAPT, firewall, endpoint protection.</p>
-                    </div>
-
-                    <!-- Hidden cards -->
-                    <div class="card extra-service"
-                        style="background-image: url(./image/backUp-and-DR.jpg); display: none;">
-                        <h4>Backup & DR</h4>
-                        <p style="margin-top:8px">Backup strategies and disaster recovery.</p>
-                    </div>
-                    <div class="card extra-service" style="background-image: url(./image/ERP.jpg); display: none;">
-                        <h4>Enterprise Resource Planning (ERP)</h4>
-                        <p style="margin-top:8px"></p>
-                    </div>
-                    <div class="card extra-service" style="background-image: url(./image/InfaraIT.jpg); display: none;">
-                        <h4>End-User Computing (EUC) Services</h4>
-                        <ul style="color: rgb(71, 222, 222); margin-top:8px; list-style: none; padding: 0;">
-                            <li>Supporting employees' daily technology needs</li>
-                            <li>Desktop & Laptop Support</li>
-                            <li>Device Procurement & Lifecycle Management</li>
-                        </ul>
-                    </div>
-                    <div class="card extra-service" style="background-image: url(./image/It.webp); display: none;">
-                        <h4>Network Infrastructure Services</h4>
-                        <p style="margin-top:8px">Design, deployment, and maintenance of robust network systems.</p>
-                    </div>
+    <!-- About Rubi Technologies Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-graphic"></div>
                 </div>
 
-                <div style="text-align: center; margin-top: 30px;">
-                    <button id="toggleServices"
-                        style="padding: 10px 25px; border: none; border-radius: 6px; background: var(--accent, #ff4d6d); color: #000000; cursor: pointer; font-size: 16px;">
-                        Show All Services
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- 
-        <section id="services" style="background:var(--muted)">
-            <div class="container">
-                <h2 class="section-title" style="text-align: center; font-size: 30px; padding-bottom: 20px;">
-                    Professional and highly dedicated
-                    <br> business services
-                </h2>
-                <div class="grid-4" style="margin-top:10px">
-                    <div class="card" style="background-image: url(./image/pc-repare.jpg);;">
-                        <h4>All In One PC Solution's</h4>
-                        <p style="margin-top:8px">Gaming PC Build, Desktop & Laptop Repare.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/It.webp);;">
-                        <h4>Managed IT Services</h4>
-                        <p style="margin-top:8px">24x7 monitoring, support and IT helpdesk.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/cloude.webp);">
-                        <h4>Cloud Migration</h4>
-                        <p style="margin-top:8px">Azure & AWS migration, cost optimization.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/Security-Solutions.webp);">
-                        <h4>Cybersecurity</h4>
-                        <p style="margin-top:8px">VAPT, firewall, endpoint protection.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/backUp-and-DR.jpg);">
-                        <h4>Backup & DR</h4>
-                        <p style="margin-top:8px">Backup strategies and disaster recovery.</p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/ERP.jpg);">
-                        <h4>Enterprise Resource Planning (ERP)</h4>
-                        <p style="margin-top:8px"></p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/ERP.jpg);">
-                        <h4>End-User Computing (EUC) Services</h4>
-                        <p style="margin-top:8px">
-                            <li style="color: rgb(71, 222, 222);">
-                                <ul>Supporting employees's daily technology needs.</ul>
-                                <ul>Desktop & Laptop Support</ul>
-                                <ul>Device Procurement & Lifecycle Management</ul>
-                            </li>
-                        </p>
-                    </div>
-                    <div class="card" style="background-image: url(./image/ERP.jpg);">
-                        <h4>Enterprise Resource Planning (ERP)</h4>
-                        <p style="margin-top:8px"></p>
+                <div class="about-text">
+                    <h2 class="section-title">About Rubi Technologies</h2>
+                    <p class="about-mission">
+                        <strong>Our Mission:</strong> To empower businesses with innovative IT solutions that drive
+                        digital transformation and sustainable growth.
+                    </p>
+                    <p class="about-description">
+                        Rubi Technologies is a leading provider of enterprise IT solutions, specializing in cloud
+                        infrastructure,
+                        cybersecurity, and managed services. With years of experience serving diverse industries, we
+                        combine
+                        technical expertise with business insight to deliver solutions that matter.
+                    </p>
+                    <p class="about-description">
+                        <strong>Our Vision:</strong> To be the most trusted technology partner for businesses navigating
+                        the
+                        digital age, providing cutting-edge solutions that transform challenges into opportunities.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clients Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <section id="products">
-            <div class="container">
-                <h2 class="section-title">Products & Partners</h2>
-                <p class="section-sub">
-                    We are channel partners for best-in-class software and hardware vendors.
-                </p>
+        </div>
+    </section>
 
-                <div class="partners-wrapper">
-                    <div class="partners">
-                        <div class="partner"><img src="image/microsoft-logo.jpg" alt="Microsoft"></div>
-                        <div class="partner"><img src="image/dell-logo.webp" alt="Dell"></div>
-                        <div class="partner"><img src="image/adobe-logo.png" alt="Adobe"></div>
-                        <div class="partner"><img src="image/HP-logo.webp" alt="HP"></div>
-                        <div class="partner"><img src="image/android-logo.webp" alt="Android"></div>
-                        <!-- duplicate logos for smooth infinite scroll -->
-                        <div class="partner"><img src="image/microsoft-logo.jpg" alt="Microsoft"></div>
-                        <div class="partner"><img src="image/dell-logo.webp" alt="Dell"></div>
-                        <div class="partner"><img src="image/adobe-logo.png" alt="Adobe"></div>
-                        <div class="partner"><img src="image/HP-logo.webp" alt="HP"></div>
-                        <div class="partner"><img src="image/android-logo.webp" alt="Android"></div>
-                    </div>
+    <!-- Our Clients Section -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Clients</h2>
+                <p class="section-subtitle">Trusted by industry leaders worldwide</p>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <img src="image/microsoft-logo.jpg" alt="Microsoft">
+                </div>
+                <div class="client-logo">
+                    <img src="image/dell-logo.webp" alt="Dell">
+                </div>
+                <div class="client-logo">
+                    <img src="image/adobe-logo.png" alt="Adobe">
+                </div>
+                <div class="client-logo">
+                    <img src="image/HP-logo.webp" alt="HP">
+                </div>
+                <div class="client-logo">
+                    <img src="image/android-logo.webp" alt="Android">
+                </div>
+                <div class="client-logo">
+                    <img src="image/microsoft-logo.jpg" alt="Microsoft Partner">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div class="contact-body">
-            <section id="contact" class="contact-section">
-                <div class="contact-container">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Transform Your Business Together</h2>
+                    <p>Contact us today and one of our experienced team members will connect with you soon.</p>
 
-                    <div class="contact-text-area">
-                        <h1>Let's talk about how we can fulfill your energy needs.</h1>
-                        <p>Contact us today and one of our experienced team members will connect with you soon.</p>
-
-                        <div class="contact-email">
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -320,13 +375,11 @@
                                 </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
-                            <div>
-                                <a href="mailto:info@rubitechnologies.in">info@rubitechnologies.in</a>
-                            </div>
+                            <a href="mailto:info@rubitechnologies.in">info@rubitechnologies.in</a>
                         </div>
 
-                        <div class="contact-email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path
@@ -334,400 +387,251 @@
                                 </path>
                             </svg>
                             <div>
-                                <a href="tel:+91 7991893433"> +91 7991893433</a> / <a
-                                    href="tel:917310433406">7310433406</a>
+                                <a href="tel:+917991893433">+91 7991893433</a> /
+                                <a href="tel:+917310433406">7310433406</a>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- <div class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.518-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
-                        </div> -->
+                <form class="contact-form" action="https://formsubmit.co/info@rubitechnologies.in" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Business Inquiry">
+                    <input type="hidden" name="_next" value="https://https://rubitechnologies.in/thanks.html">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
                     </div>
 
-                    <form class="contact-form" action="https://formsubmit.co/info@rubitechnologies.in" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_subject" value="New Energy Inquiry">
-
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <label for="name">Your Name</label>
-                                <div class="input-icon-group">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group half">
-                                <label for="company">Company Name</label>
-                                <div class="input-icon-group">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <rect x="3" y="10" width="18" height="11" rx="2" ry="2"></rect>
-                                        <line x1="12" y1="17" x2="12" y2="17"></line>
-                                        <line x1="8" y1="17" x2="8" y2="17"></line>
-                                        <line x1="16" y1="17" x2="16" y2="17"></line>
-                                        <path d="M12 21V3"></path>
-                                        <path d="M17 21V8"></path>
-                                        <path d="M7 21V6"></path>
-                                    </svg>
-                                    <input type="text" id="company" name="company" required>
-                                </div>
-                            </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <label for="email">Email ID</label>
-                                <div class="input-icon-group">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                        </path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group half">
-                                <label for="phone">Phone Number</label>
-                                <div class="input-icon-group">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M22 16.92v3.06a2 2 0 0 1-2.2 2A18.8 18.8 0 0 1 3.02 4.2a2 2 0 0 1 2-2h3.06A2 2 0 0 1 10 3.14l1.83 4a2 2 0 0 1-.4 2L8.7 11.83a12.1 12.1 0 0 0 5.48 5.48l2.63-2.63a2 2 0 0 1 2-.4l4 1.83a2 2 0 0 1 1.14 1.12z">
-                                        </path>
-                                    </svg>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
                         </div>
+                    </div>
 
-                        <div class="form-group full">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
 
-                        <button type="submit" class="submit-btn">
-                            Submit
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- <footer>
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>CEO</h3>
-                <p>Rashmi Vishwakarama</p><br><br>
-                <h3>Rubi Technologies</h3>
-                <p>Building resilient, secure, and scalable IT Infrastructure for modern businesses.</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p><b>Email:</b> <a href="mailto:info@rubitechnologies.in">info@rubitechnologies.in</a><br><br>
-                    <b>Phone:</b> <a href="tel:+91 7991893433"> +91 7991893433</a> / <a
-                        href="tel:917310433406">7310433406</a>
-                    <br><br>
-                    <b>Shop Address:</b> <em>06, opp Builing number 262, Sant Dnyaneshwar Nagar, Kherwadi road,
-                        Bandra(East),
-                        Mumbai, Maharastra, 400051 , India</em>
-                </p><br><br>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © 2025 Rubi Technologies — All rights reserved.
-        </div>
-    </footer> -->
-
-    <footer class="wroffy-footer">
-
-        <div class="footer-top-section">
-            <div class="footer-container products-container">
-
-                <div class="product-column">
-                    <h3> <img src="./image/microsoft-100x100.png.webp" alt="microsoft-logo" class="footer-logos">
-                        MICROSOFT</h3>
-                    <ul>
-                        <li>Microsoft 365</li>
-                        <li>Office 365 Enterprise</li>
-                        <li>Windows 11 Pro</li>
-                        <li>Windows Server 2025</li>
-                        <li>Microsoft SQL Server</li>
-                        <li>Microsoft Teams</li>
-                        <li>Office 2024</li>
-                        <li>Microsoft Project</li>
-                        <li>Microsoft Visio</li>
-                        <li>Power BI Pro</li>
-                        <li>Microsoft Defender</li>
-                        <li>Dynamics 365</li>
-                        <li>Microsoft Surface</li>
-                        <li>Microsoft Visual Studio</li>
-                        <li>Microsoft Power Apps</li>
-                        <li>Microsoft Intune</li>
-                        <li>Microsoft Copilot Pro</li>
-                    </ul>
-                </div>
-
-                <div class="product-column">
-                    <h3> <img src="./image/adobe-100x100.png.webp" alt="adobe-logo" class="footer-logos"> ADOBE</h3>
-                    <ul>
-                        <li>Creative Cloud for Teams</li>
-                        <li>Adobe Acrobat</li>
-                        <li>Photoshop for Teams</li>
-                        <li>Illustrator for Teams</li>
-                        <li>After Effects for Teams</li>
-                        <li>Substance 3D</li>
-                        <li>Acrobat DC Pro</li>
-                    </ul>
-                    <h3><img src="./image/autodesk-1-100x100.png.webp" alt="autodesk-logo" class="footer-logos">
-                        AUTODESK</h3>
-                    <ul>
-                        <li>AutoCAD 2025</li>
-                        <li>AutoCAD LT</li>
-                        <li>3DS MAX</li>
-                        <li>Autodesk Maya</li>
-                        <li>Revit</li>
-                        <li>Arnold</li>
-                        <li>AEC Collection</li>
-                        <li>M & E Collection</li>
-                        <li>PDM Collection</li>
-                    </ul>
-                </div>
-
-                <div class="product-column">
-                    <h3><img src="./image/customer-100x100.png.webp" alt="customer-logo" class="footer-logos">SERVICES
-                    </h3>
-                    <ul>
-                        <li>Managed Firewall Services</li>
-                        <li>Managed Cloud Services</li>
-                        <li>Managed IT Services</li>
-                        <li>Cloud Migration</li>
-                        <li>Microsoft 365 Migration</li>
-                        <li>Video Conferencing</li>
-                        <li>IT Staffing</li>
-                    </ul>
-                    <h3><img src="./image/security-2-100x100.png.webp" alt="security-logo" class="footer-logos">
-                        SECURITY SOLUTIONS</h3>
-                    <ul>
-                        <li>Business Antivirus</li>
-                        <li>Email Security</li>
-                        <li>Mobile Device Management</li>
-                        <li>Endpoint Protection</li>
-                        <li>Data Loss Prevention</li>
-                        <li>Network Security</li>
-                        <li>Disaster Recovery & Backup</li>
-                    </ul>
-                </div>
-
-                <div class="product-column">
-                    <h3><img src="./image/certificate-100x100.png.webp" alt="certificate-logo"
-                            class="footer-logos">SOFTWARE LICENSING</h3>
-                    <ul>
-                        <li>Microsoft 365 for Business</li>
-                        <li>Google Workspace</li>
-                        <li>Windows 11 Pro</li>
-                        <li>Adobe License</li>
-                        <li>Autodesk License</li>
-                        <li>CorelDraw License</li>
-                        <li>Tally ERP License</li>
-                    </ul>
-                    <h3><img src="./image/laptop-100x100.png.webp" alt="laptop-logo" class="footer-logos">BUSINESS
-                        HARDWARE</h3>
-                    <ul>
-                        <li>Business Laptop</li>
-                        <li>Business Printers</li>
-                        <li>Network Firewall</li>
-                        <li>Routers & Switches</li>
-                        <li>Servers & Racks</li>
-                        <li>Digital Signages</li>
-                        <li>UPS & Power</li>
-                    </ul>
-                </div>
-
-                <div class="product-column">
-                    <h3><img src="./image/www-100x100.png.webp" alt="www-logo" class="footer-logos">DIGITAL & WEB</h3>
-                    <ul>
-                        <li>Digital Marketing</li>
-                        <li>SEO Services</li>
-                        <li>Website Designing</li>
-                        <li>Domain Name Registration</li>
-                        <li>VPS Hosting</li>
-                        <li>Website Hosting</li>
-                        <li>SSL Certificates</li>
-                    </ul>
-                    <h3><img src="./image/cloud-1-100x100.png.webp" alt="cloud-logo" class="footer-logos">CLOUD
-                        COMPUTING</h3>
-                    <ul>
-                        <li>Cloud Storage</li>
-                        <li>Cloud Hosting</li>
-                        <li>AWS Cloud</li>
-                        <li>Azure Cloud</li>
-                        <li>Tally on Cloud</li>
-                        <li>Acronis Cyber Backup</li>
-                        <li>Veeam Cloud Backup</li>
-                    </ul>
-                </div>
-
-                <div class="product-column">
-                    <h3><img src="./image/www-100x100.png (1).webp" alt="microsoft-logo" class="footer-logos">ENDPOINT
-                        ANTIVIRUS</h3>
-                    <ul>
-                        <li>Bitdefender</li>
-                        <li>eScan Antivirus</li>
-                        <li>Seqrite</li>
-                        <li>CrowdStrike Antivirus</li>
-                        <li>Trend Micro Antivirus</li>
-                        <li>Kaspersky Antivirus</li>
-                        <li>Sophos InterceptX</li>
-                        <li>Malwarebytes</li>
-                        <li>AVG Antivirus</li>
-                        <li>ESET Antivirus</li>
-                        <li>Quickheal Antivirus</li>
-                    </ul>
-                    <h3><img src="./image/coreldraw-software-100x100.png.webp" alt="corel-logo"
-                            class="footer-logos">COREL</h3>
-                    <ul>
-                        <li>Coreldraw Graphics Suite</li>
-                        <li>Coreldraw Technical Suite</li>
-                        <li>Pinnacle</li>
-                    </ul>
-                </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
             </div>
         </div>
+    </section>
 
-        <div class="footer-bottom-section">
-            <div class="footer-container info-container">
-
-                <div class="footer-section about-wroffy">
-                    <h3>About Rubi Technologies®</h3>
-                    <p>
-                        Rubi Technologies® is a leading provider of end-to-end business software, hardware, and cloud
-                        technology
-                        solutions.
-                        It enables startups and businesses to digital transformations using technology-driven services.
-                        It also helps you buy business software online so that businesses can modernize their workplace
-                        and migrate
-                        critical workloads on public clouds while optimizing the cloud assets and licensing in parallel.
-                    </p>
-                    <!-- <div class="protection-badge">
-                        <span class="badge-text">DMCA PROTECTED</span>
-                    </div> -->
+    <!-- Footer (Mega Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Rubi Technologies -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Rubi Technologies</h3>
+                    <p class="footer-desc">Leading provider of enterprise IT solutions, cloud services, and digital
+                        transformation for modern businesses.</p>
+                    <div class="footer-brand">
+                        <div class="logo">RT</div>
+                        <div>Smart IT Solutions for Modern Business</div>
+                    </div>
                 </div>
 
-                <div class="footer-section company-links">
-                    <h3>Company</h3>
-                    <ul>
+                <!-- Microsoft Products -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Microsoft</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Office 365</a></li>
+                        <li><a href="#">Microsoft 365</a></li>
+                        <li><a href="#">Windows Server</a></li>
+                        <li><a href="#">Azure Cloud</a></li>
+                        <li><a href="#">Dynamics 365</a></li>
+                        <li><a href="#">Microsoft Copilot Pro</a></li>
+                    </ul>
+                </div>
+
+                <!-- Adobe Products -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Adobe</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Creative Cloud</a></li>
+                        <li><a href="#">Photoshop</a></li>
+                        <li><a href="#">Illustrator</a></li>
+                        <li><a href="#">Premiere Pro</a></li>
+                        <li><a href="#">Acrobat Pro DC</a></li>
+                        <li><a href="#">After Effects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Autodesk Products -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Autodesk</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">AutoCAD</a></li>
+                        <li><a href="#">Revit</a></li>
+                        <li><a href="#">Maya</a></li>
+                        <li><a href="#">3ds Max</a></li>
+                        <li><a href="#">Fusion 360</a></li>
+                        <li><a href="#">Civil 3D</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Managed IT Services</a></li>
+                        <li><a href="#services">Cloud Migration</a></li>
+                        <li><a href="#services">IT Consulting</a></li>
+                        <li><a href="#services">Digital Transformation</a></li>
+                        <li><a href="#services">Product Development</a></li>
+                        <li><a href="#services">Web & App Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Security Solutions -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Security Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Endpoint Protection</a></li>
+                        <li><a href="#">VAPT Services</a></li>
+                        <li><a href="#">Firewall Solutions</a></li>
+                        <li><a href="#">Network Security</a></li>
+                        <li><a href="#">Data Encryption</a></li>
+                        <li><a href="#">IT Audits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Software Licensing -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Software Licensing</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Enterprise Licenses</a></li>
+                        <li><a href="#">Volume Licensing</a></li>
+                        <li><a href="#">Education Licenses</a></li>
+                        <li><a href="#">License Compliance</a></li>
+                        <li><a href="#">Software Asset Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Business Hardware -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Business Hardware</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Workstations</a></li>
+                        <li><a href="#">Servers</a></li>
+                        <li><a href="#">Laptops & Desktops</a></li>
+                        <li><a href="#">Networking Equipment</a></li>
+                        <li><a href="#">Storage Solutions</a></li>
+                        <li><a href="#">Custom PC Builds</a></li>
+                    </ul>
+                </div>
+
+                <!-- Digital & Web -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Digital & Web</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">SEO Services</a></li>
+                        <li><a href="#">Content Management</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Computing -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Cloud Computing</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Azure Services</a></li>
+                        <li><a href="#">AWS Solutions</a></li>
+                        <li><a href="#">Google Cloud</a></li>
+                        <li><a href="#">Hybrid Cloud</a></li>
+                        <li><a href="#">Cloud Backup</a></li>
+                        <li><a href="#">Cloud Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Endpoint Antivirus -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Endpoint Antivirus</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Kaspersky</a></li>
+                        <li><a href="#">Norton</a></li>
+                        <li><a href="#">McAfee</a></li>
+                        <li><a href="#">Bitdefender</a></li>
+                        <li><a href="#">Trend Micro</a></li>
+                        <li><a href="#">ESET</a></li>
+                    </ul>
+                </div>
+
+                <!-- Corel -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Corel</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">CorelDRAW</a></li>
+                        <li><a href="#">Corel Painter</a></li>
+                        <li><a href="#">Corel VideoStudio</a></li>
+                        <li><a href="#">WordPerfect Office</a></li>
+                        <li><a href="#">WinZip</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Careers</a></li>
-                        <li><a href="#contact">Clients</a></li>
+                        <li><a href="#services">Our Services</a></li>
                         <li><a href="#products">Products</a></li>
-                        <li><a href="#">Policies</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section support-contact">
-                    <h3>Have a question?</h3>
-                    <div class="helpline-info">
-                        <p>Sales Helpline</p>
-                        <p class="phone-number"><a href="tel:917310433406">+91 7310433406</a></p>
-                    </div>
-
-                    <h4>Connect us on Social Media</h4>
-                    <!-- <div class="social-icons">
-                        <a href="#" class="social-icon">F</a>
-                        <a href="#" class="social-icon">T</a>
-                        <a href="#" class="social-icon">L</a>
-                        <a href="#" class="social-icon">I</a>
-                        <a href="#" class="social-icon">Y</a>
-                    </div> -->
-                </div>
-
-                <div class="footer-section contact-info">
-                    <h3>Contact</h3>
-                    <div class="contact-item">
-                        <a href="tel:+91 7991893433" style="color: white;"><span class="icon">📞</span> +91
-                            7991893433</a>
-                    </div>
-                    <div class="contact-item"> <a href="mailto:info@rubitechnologies.in" style="color: white;">
-                            <span class="icon">📧</span> info@rubitechnologies.in</a>
-                    </div>
-                    <div class="contact-item address">
-                        <span class="icon">🏠</span> 06, opp Builing number 262, Sant Dnyaneshwar Nagar, Kherwadi road,
-                        Bandra(East),
-                        Mumbai, Maharastra, 400051 , India
-                    </div>
+                <!-- Contact Information -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Phone:</strong><br>
+                            +91 7991893433<br>
+                            +91 7310433406
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            info@rubitechnologies.in
+                        </li>
+                        <li>
+                            <strong>Address:</strong><br>
+                            India
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div style="height: 7vh; background-color: #000000; padding: 20px; font-size: 16px;">
-            <p>© 2025 Rubi Technologies - All rights reserved.</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rubi Technologies — All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-
-<script>
-
-    var int;
-    function setInt() {
-        clearInterval(int);
-        int = setInterval(function () {
-            var btns = document.getElementsByName("carousel");
-            for (var i = 0; i < btns.length; i++) {
-                if (btns[i].checked) {
-                    btns[i].checked = false;
-                    if (i + 1 == btns.length) {
-                        btns[0].checked = true;
-                    }
-                    else {
-                        btns[i + 1].checked = true;
-                    }
-                    return;
-                }
-            }
-        }, 5000);
-    }
-    setInt();
-
-    const toggleBtn = document.getElementById('toggleServices');
-    const extraServices = document.querySelectorAll('.extra-service');
-    let expanded = false;
-
-    toggleBtn.addEventListener('click', () => {
-        expanded = !expanded;
-        extraServices.forEach(card => {
-            card.style.display = expanded ? 'block' : 'none';
-        });
-        toggleBtn.textContent = expanded ? 'Show Less' : 'Show All Services';
-    });
-
-
-</script>
 
 </html>

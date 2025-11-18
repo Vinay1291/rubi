@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thank You - Rubi Technologies</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            animation: scaleIn 0.5s ease 0.3s backwards;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .success-icon svg {
+            width: 50px;
+            height: 50px;
+            stroke: #fff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        .checkmark {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: drawCheck 0.5s ease 0.6s forwards;
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .info-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .info-box p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .info-box strong {
+            color: #2563eb;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8fafc;
+            color: #0f172a;
+            border: 2px solid #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 16px;
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        }
+
+        .brand-text {
+            text-align: left;
+        }
+
+        .brand-name {
+            font-weight: 700;
+            font-size: 14px;
+            color: #0f172a;
+        }
+
+        .brand-tagline {
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container {
+                padding: 40px 24px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thank-you-container">
+        <div class="success-icon">
+            <svg viewBox="0 0 52 52">
+                <polyline class="checkmark" points="14 27 22 35 38 19" />
+            </svg>
+        </div>
+
+        <h1>Thank You!</h1>
+        <p>Your message has been successfully submitted. We appreciate you reaching out to us.</p>
+
+        <div class="info-box">
+            <h3>What happens next?</h3>
+            <p><strong>✓</strong> Our team will review your inquiry</p>
+            <p><strong>✓</strong> We'll respond within 24 business hours</p>
+            <p><strong>✓</strong> You'll receive a confirmation email shortly</p>
+        </div>
+
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">Back to Home</a>
+            <a href="/#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+
+        <div class="brand">
+            <div class="logo">RT</div>
+            <div class="brand-text">
+                <div class="brand-name">Rubi Technologies<sup>®</sup></div>
+                <div class="brand-tagline">Smart IT Solutions</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.success-icon').style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                document.querySelector('.success-icon').style.transform = 'scale(1)';
+            }, 200);
+        }, 1000);
+    </script>
+</body>
+
+</html>
