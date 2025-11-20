@@ -79,7 +79,7 @@ export default function ProductCarousel() {
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <span className="absolute top-4 left-4 text-xs uppercase tracking-[0.3em] bg-white/80 px-3 py-1 rounded-full text-foreground">
+                <span className="absolute top-4 left-4 text-xs uppercase tracking-[0.3em] bg-white/80 px-3 py-1 rounded-full text-foreground text-primary">
                   Featured
                 </span>
               </div>
