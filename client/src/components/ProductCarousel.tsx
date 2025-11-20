@@ -44,7 +44,7 @@ export default function ProductCarousel() {
   return (
     <section
       id="products"
-      className="py-20 bg-gradient-to-b from-white via-background to-card"
+      className="py-20 from-white via-background to-card"
       data-testid="products-section"
     >
       <div className="max-w-7xl mx-auto px-6">
