@@ -70,7 +70,7 @@ export default function ProductCarousel() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="overflow-hidden border border-border/60 bg-white/70 shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all"
+              className="overflow-hidden border border-border/60 bg-white/70 shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all cardbg"
               data-testid={`product-card-${index}`}
             >
               <div className="relative aspect-[4/3] overflow-hidden">

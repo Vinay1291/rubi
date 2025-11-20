@@ -50,7 +50,7 @@ export default function AboutSection() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-2xl border border-border/80 p-6 bg-white/70 shadow-sm">
+              <div className="rounded-2xl border border-border/80 p-6 bg-white/70 shadow-sm cardbg">
                 <h3 className="text-xl font-semibold text-foreground mb-4">Client perspective</h3>
                 <blockquote className="text-muted-foreground italic">
                   “Rubi orchestrated our cloud migration without disrupting operations. Their cadence
