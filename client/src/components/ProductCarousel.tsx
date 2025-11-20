@@ -58,7 +58,7 @@ export default function ProductCarousel() {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-xl">
-            Every Rubi solution blends intuitive experience design with robust engineering so your
+            Every Rubi Technologies solution blends intuitive experience design with robust engineering so your
             teams can move faster with confidence.
           </p>
         </div>

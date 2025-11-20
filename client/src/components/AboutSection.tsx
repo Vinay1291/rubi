@@ -22,7 +22,7 @@ export default function AboutSection() {
           </div>
 
           <div className="order-1 lg:order-2 space-y-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary">About Rubi</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary">About Rubi Technologies</p>
             <h2 className="text-4xl md:text-5xl font-serif text-foreground">
               Building technology that keeps pace with ambitious leaders
             </h2>
