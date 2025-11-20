@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import ContactModal from "./ContactModal";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,7 +69,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
             <Button
               onClick={() => setIsContactModalOpen(true)}
               data-testid="button-get-in-touch"
@@ -90,6 +92,12 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-background border-b" data-testid="mobile-menu">
           <div className="px-6 py-4 space-y-2">
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-sm font-semibold text-muted-foreground">
+                Appearance
+              </span>
+              <ThemeToggle />
+            </div>
             {menuItems.map((item) => (
               <button
                 key={item.label}
