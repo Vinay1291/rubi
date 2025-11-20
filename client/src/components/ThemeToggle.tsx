@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Moon, SunMedium, Sparkles } from "lucide-react";
+import { Moon, SunMedium } from "lucide-react";
 import { ThemeOption, useTheme } from "@/hooks/use-theme";
 
 const THEME_OPTIONS: Array<{
@@ -10,11 +10,6 @@ const THEME_OPTIONS: Array<{
 }> = [
   { value: "light", label: "Light", icon: <SunMedium className="h-4 w-4" /> },
   { value: "dark", label: "Dark", icon: <Moon className="h-4 w-4" /> },
-  {
-    value: "purple",
-    label: "Purple",
-    icon: <Sparkles className="h-4 w-4" />,
-  },
 ];
 
 export function ThemeToggle() {

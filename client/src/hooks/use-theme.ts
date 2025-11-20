@@ -1,9 +1,9 @@
 import { useEffect, useCallback, useState } from "react";
 
 const THEME_STORAGE_KEY = "rubi-theme";
-const THEME_CLASSES = ["dark", "theme-purple"] as const;
+const THEME_CLASSES = ["dark"] as const;
 
-export type ThemeOption = "light" | "dark" | "purple";
+export type ThemeOption = "light" | "dark";
 
 function applyThemeClasses(theme: ThemeOption) {
   if (typeof document === "undefined") {
@@ -15,8 +15,6 @@ function applyThemeClasses(theme: ThemeOption) {
 
   if (theme === "dark") {
     root.classList.add("dark");
-  } else if (theme === "purple") {
-    root.classList.add("theme-purple");
   }
 }
 
