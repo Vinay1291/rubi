@@ -117,7 +117,7 @@ export default async function handler(
 
   try {
     const validatedData = contactSubmissionSchema.parse(req.body);
-    await storage.saveContactSubmission(validatedData);
+    await saveContactSubmission(validatedData);
     await sendContactEmail(validatedData);
 
     return res.json({
