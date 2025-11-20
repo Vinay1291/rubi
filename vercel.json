@@ -10,8 +10,7 @@
   ],
   "functions": {
     "api/**/*.ts": {
-      "runtime": "nodejs20.x",
-      "includeFiles": ["shared/**", "server/**"]
+      "runtime": "nodejs20.x"
     }
   }
 }
