@@ -1,0 +1,14 @@
+# robots.txt for your site
+# Replace https://rubitechnologies.in with your real site URL before deploying
+
+User-agent: *
+Allow: /
+Sitemap: https://rubitechnologies.in/sitemap.xml
+
+# Example: block an admin area (uncomment to enable)
+# Disallow: /admin/
+
+# Notes:
+# - Place this file at the site root so it is available at https://rubitechnologies.in/robots.txt
+# - After deploying, verify at https://rubitechnologies.in/robots.txt and submit the sitemap in Google Search Console
+# - If you want, I can replace the example.com URL with your real domain and submit the sitemap for indexing.
